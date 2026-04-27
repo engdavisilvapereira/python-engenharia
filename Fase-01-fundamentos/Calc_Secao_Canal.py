@@ -97,8 +97,8 @@ def selecionar_secao():
         except ValueError:
             print("Entrada inválida. Digite apenas números.")
             exit()
-        if yn > d:
-            print("Profundidade não pode ser maior que o diâmetro.")
+        if yn >= d:
+            print("Profundidade deve ser menor que o diâmetro (seção não pode estar plena).")
             exit()
         return calcular_circular(yn, d)
     else:
