@@ -1,6 +1,5 @@
 # conversor_vazao.py
 # Conversor de unidades de vazão — 7 unidades, matriz completa 7×7
-
 # Dicionário com os fatores de conversão
 # Leitura: fatores[origem][destino] = fator multiplicador
 fatores = {
@@ -40,7 +39,6 @@ fatores = {
         "pcm": 0.1336805556, "gpm": 1.0
     }
 }
-
 # Nomes legíveis para exibição no terminal
 nomes = {
     "m3_s": "m³/s",
@@ -51,53 +49,46 @@ nomes = {
     "pcm": "pcm (pé³/min)",
     "gpm": "GPM (gal/min US)"
 }
-
 # Lista ordenada das chaves para montar o menu
 unidades = list(nomes.keys())
-
 # Exibe o menu de unidades
-print("Conversor de Vazão")
-print("-" * 30)
-for i, chave in enumerate(unidades, start=1):
-    print(f"{i} — {nomes[chave]}")
+def converter_vazao(valor, chave_origem, chave_destino):
+    # Busca o fator na matriz e aplica a conversão
+    fator = fatores[chave_origem][chave_destino]
+    resultado = valor * fator
+    return resultado
+def secao_vazao():
+    print("Conversor de Vazão")
+    print("-" * 30)
+    for i, chave in enumerate(unidades, start=1):
+        print(f"{i} — {nomes[chave]}")
+    print()
+    try:
+        opcao_origem = int(input("Unidade de origem (número): "))
+        opcao_destino = int(input("Unidade de destino (número): "))
+    except ValueError:
+        print("Entrada inválida. Digite apenas números inteiros.")
+        exit() 
+    indice_origem = opcao_origem - 1
+    indice_destino = opcao_destino - 1
+    # Verifica se os índices estão no intervalo válido
+    if not (0 <= indice_origem < len(unidades) and 0 <= indice_destino < len(unidades)):
+        print("Opção fora do intervalo. Digite um número de 1 a 7.")
+        exit()
+    chave_origem = unidades[indice_origem]
+    chave_destino = unidades[indice_destino]
+    # Solicita o valor da vazão com tratamento de erro
+    try:
+        valor = float(input("Digite o valor da vazão: "))
+    except ValueError:
+        print("Valor inválido. Digite um número (use ponto para decimais).")
+        exit()
 
-print()
-
-# Solicita as opções do usuário com tratamento de erro
-try:
-    opcao_origem = int(input("Unidade de origem (número): "))
-    opcao_destino = int(input("Unidade de destino (número): "))
-except ValueError:
-    # O usuário digitou texto em vez de número
-    print("Entrada inválida. Digite apenas números inteiros.")
-    exit()  # Encerra o programa — sem isso, o código continuaria e daria outro erro
-
-# Converte para índice da lista (subtrai 1 porque listas começam em 0)
-indice_origem = opcao_origem - 1
-indice_destino = opcao_destino - 1
-
-# Verifica se os índices estão no intervalo válido (0 a 6)
-if not (0 <= indice_origem < len(unidades) and 0 <= indice_destino < len(unidades)):
-    print("Opção fora do intervalo. Digite um número de 1 a 7.")
-    exit()
-
-chave_origem = unidades[indice_origem]
-chave_destino = unidades[indice_destino]
-
-# Solicita o valor da vazão com tratamento de erro
-try:
-    valor = float(input("Digite o valor da vazão: "))
-except ValueError:
-    print("Valor inválido. Digite um número (use ponto para decimais).")
-    exit()
-
-# Rejeita valores negativos — vazão negativa não tem sentido físico
-if valor < 0:
-    print("Vazão não pode ser negativa.")
-    exit()
-
-# Busca o fator na matriz e aplica a conversão
-fator = fatores[chave_origem][chave_destino]
-resultado = valor * fator
-
-print(f"{valor:.3f} {nomes[chave_origem]} = {resultado:.3f} {nomes[chave_destino]}")
+    # Rejeita valores negativos — vazão negativa não tem sentido físico
+    if valor < 0:
+        print("Vazão não pode ser negativa.")
+        exit()
+    return valor, chave_origem, chave_destino, converter_vazao(valor, chave_origem, chave_destino)
+if __name__ == "__main__":
+    valor, chave_origem, chave_destino, resultado = secao_vazao()
+    print(f"{valor:.3f} {nomes[chave_origem]} = {resultado:.3f} {nomes[chave_destino]}")

@@ -1,15 +1,5 @@
 # Conversor_Pressao.py
 # Conversor de unidades de Pressão — 8 unidades, matriz completa 8×8
-
-# Definições exatas em Pa (unidade SI):
-# 1 kPa  = 1000 Pa
-# 1 MPa  = 1000000 Pa
-# 1 bar  = 100000 Pa
-# 1 atm  = 101325 Pa
-# 1 mca  = 9806.65 Pa  (convenção padrão, g = 9.80665 m/s²)
-# 1 psi  = 6894.757293168 Pa
-# 1 mmHg = 133.322387415 Pa
-
 fatores = {
     "Pa": {
         "Pa": 1.0, "kPa": 0.001, "MPa": 0.000001,
@@ -60,8 +50,6 @@ fatores = {
         "mmHg": 1.0
     }
 }
-
-# Nomes legíveis para exibição no terminal
 nomes = {
     "Pa": "Pa (pascal)",
     "kPa": "kPa (quilopascal)",
@@ -72,47 +60,39 @@ nomes = {
     "psi": "psi (libra por pol²)",
     "mmHg": "mmHg (milímetros de mercúrio)"
 }
-
-# Lista ordenada das chaves para montar o menu
+# Lista global — usada pelas funções e pelo programa principal
 unidades = list(nomes.keys())
-
-# Exibe o menu de unidades
-print("Conversor de Pressão")
-print("-" * 30)
-for i, chave in enumerate(unidades, start=1):
-    print(f"{i} — {nomes[chave]}")
-
-print()
-
-# Solicita as opções do usuário com tratamento de erro
-try:
-    opcao_origem = int(input("Unidade de origem (número): "))
-    opcao_destino = int(input("Unidade de destino (número): "))
-except ValueError:
-    print("Entrada inválida. Digite apenas números inteiros.")
-    exit()
-
-# Converte para índice da lista (subtrai 1 porque listas começam em 0)
-indice_origem = opcao_origem - 1
-indice_destino = opcao_destino - 1
-
-# Verifica se os índices estão no intervalo válido (0 a 7)
-if not (0 <= indice_origem < len(unidades) and 0 <= indice_destino < len(unidades)):
-    print("Opção fora do intervalo. Digite um número de 1 a 8.")
-    exit()
-
-chave_origem = unidades[indice_origem]
-chave_destino = unidades[indice_destino]
-
-# Solicita o valor da pressão com tratamento de erro
-try:
-    valor = float(input("Digite o valor da pressão: "))
-except ValueError:
-    print("Valor inválido. Digite um número (use ponto para decimais).")
-    exit()
-
-# Busca o fator na matriz e aplica a conversão
-fator = fatores[chave_origem][chave_destino]
-resultado = valor * fator
-
-print(f"{valor:.3f} {nomes[chave_origem]} = {resultado:.3f} {nomes[chave_destino]}")
+def converter_pressao(valor, chave_origem, chave_destino):
+    # Busca o fator na matriz e aplica a conversão
+    fator = fatores[chave_origem][chave_destino]
+    return valor * fator
+def secao_pressao():
+    # Exibe o menu de unidades
+    print("Conversor de Pressão")
+    print("-" * 30)
+    for i, chave in enumerate(unidades, start=1):
+        print(f"{i} — {nomes[chave]}")
+    print()
+    # Solicita as opções do usuário com tratamento de erro
+    try:
+        opcao_origem = int(input("Unidade de origem (número): "))
+        opcao_destino = int(input("Unidade de destino (número): "))
+    except ValueError:
+        print("Entrada inválida. Digite apenas números inteiros.")
+        exit()
+    indice_origem = opcao_origem - 1
+    indice_destino = opcao_destino - 1
+    if not (0 <= indice_origem < len(unidades) and 0 <= indice_destino < len(unidades)):
+        print("Opção fora do intervalo. Digite um número de 1 a 8.")
+        exit()
+    chave_origem = unidades[indice_origem]
+    chave_destino = unidades[indice_destino]
+    try:
+        valor = float(input("Digite o valor da pressão: "))
+    except ValueError:
+        print("Valor inválido. Digite um número (use ponto para decimais).")
+        exit()
+    return valor, chave_origem, chave_destino, converter_pressao(valor, chave_origem, chave_destino)
+if __name__ == "__main__":
+    valor, chave_origem, chave_destino, resultado = secao_pressao()
+    print(f"{valor:.3f} {nomes[chave_origem]} = {resultado:.3f} {nomes[chave_destino]}")
