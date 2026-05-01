@@ -1,0 +1,37 @@
+categoria,material,n_min,n_max,fonte
+Canal revestido,"Concreto moldado, sem acabamento (formed, no finish)",0.013,0.017,Bentley/Engman 1986
+Canal revestido,Concreto com acabamento desempenado (trowel finish),0.012,0.014,Bentley/Engman 1986
+Canal revestido,Concreto com acabamento flutuado (float finish),0.013,0.015,Bentley/Engman 1986
+Canal revestido,Concreto flutuado com brita no fundo,0.015,0.017,Bentley/Engman 1986
+Canal revestido,"Gunite, seção boa",0.016,0.019,Bentley/Engman 1986
+Canal revestido,"Gunite, seção ondulada",0.018,0.022,Bentley/Engman 1986
+Canal revestido,Alvenaria de pedra aparelhada em argamassa,0.015,0.017,Bentley/Engman 1986
+Canal revestido,Alvenaria de pedra aleatória em argamassa,0.017,0.02,Bentley/Engman 1986
+Canal revestido,Alvenaria de entulho em argamassa (cement rubble masonry),0.02,0.025,Bentley/Engman 1986
+Canal revestido,Alvenaria de entulho revestida (plastered),0.016,0.02,Bentley/Engman 1986
+Canal revestido,Enrocamento (riprap) seco,0.02,0.03,Bentley/Engman 1986
+Canal revestido,"Fundo de brita, laterais em concreto",0.017,0.02,Bentley/Engman 1986
+Canal revestido,"Fundo de brita, laterais em pedra aleatória",0.02,0.023,Bentley/Engman 1986
+Canal revestido,"Fundo de brita, laterais em enrocamento seco",0.023,0.033,Bentley/Engman 1986
+Canal revestido,Alvenaria de tijolos,0.014,0.017,Bentley/Engman 1986
+Canal revestido,Asfalto liso,0.013,0.013,Bentley/Engman 1986
+Canal revestido,Asfalto rugoso,0.016,0.016,Bentley/Engman 1986
+Canal revestido,"Madeira aplainada, limpa",0.011,0.013,Bentley/Engman 1986
+Canal em terra,"Terra, seção uniforme, limpo, recém-executado",0.016,0.018,Bentley/Engman 1986
+Canal em terra,"Terra, seção uniforme, limpo, após intemperismo",0.018,0.02,Bentley/Engman 1986
+Canal em terra,"Terra, seção uniforme, com grama baixa/poucas ervas",0.022,0.027,Bentley/Engman 1986
+Canal em terra,"Solo cascalhoso, seção uniforme, limpo",0.022,0.025,Bentley/Engman 1986
+Canal em terra,"Terra, seção razoavelmente uniforme, sem vegetação",0.022,0.025,Bentley/Engman 1986
+Canal em terra,"Terra, seção razoavelmente uniforme, com grama/ervas",0.025,0.03,Bentley/Engman 1986
+Canal em terra,Ervas densas ou plantas aquáticas em canais profundos,0.03,0.035,Bentley/Engman 1986
+Canal em terra,"Laterais limpas, fundo em cascalho",0.025,0.03,Bentley/Engman 1986
+Canal em terra,"Laterais limpas, fundo em matacões (cobble)",0.03,0.04,Bentley/Engman 1986
+Canal em terra,"Escavado com dragline, sem vegetação",0.028,0.033,Bentley/Engman 1986
+Canal em terra,"Escavado com dragline, vegetação arbustiva leve nas margens",0.035,0.05,Bentley/Engman 1986
+Sarjeta/pavimento,"Sarjeta de concreto, acabamento desempenado",0.012,0.012,Bentley/Engman 1986
+Sarjeta/pavimento,"Pavimento asfáltico, textura lisa",0.013,0.013,Bentley/Engman 1986
+Sarjeta/pavimento,"Pavimento asfáltico, textura rugosa",0.016,0.016,Bentley/Engman 1986
+Sarjeta/pavimento,Sarjeta de concreto com pavimento asfáltico liso,0.013,0.013,Bentley/Engman 1986
+Sarjeta/pavimento,Sarjeta de concreto com pavimento asfáltico rugoso,0.015,0.015,Bentley/Engman 1986
+Sarjeta/pavimento,"Pavimento de concreto, acabamento flutuado",0.014,0.014,Bentley/Engman 1986
+Sarjeta/pavimento,"Pavimento de concreto, acabamento vassourado",0.016,0.016,Bentley/Engman 1986

@@ -53,8 +53,7 @@ def calcular_circular(profundidade, diametro):
         "largura_superficial": largura_superficial
     }
 def selecionar_secao():
-    """Exibe menu de seções, coleta dimensões e retorna propriedades geométricas.
-    Pode ser importada por outros programas para evitar repetição de código."""
+    "Exibe menu de seções, coleta dimensões e retorna propriedades geométricas."
     print("Escolha o tipo de seção:")
     print("1 — Retangular")
     print("2 — Triangular")
@@ -105,8 +104,6 @@ def selecionar_secao():
         print("Opção inválida.")
         exit()
 # --- Programa principal ---
-# Este bloco só executa quando o arquivo é rodado diretamente.
-# Quando importado por outro script, apenas as funções acima ficam disponíveis.
 if __name__ == "__main__":
     print("Calculadora de Seção de Canal")
     print("-" * 30)
