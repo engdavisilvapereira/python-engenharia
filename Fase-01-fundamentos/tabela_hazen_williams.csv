@@ -1,0 +1,54 @@
+categoria,material,c_min,c_tipico,c_max,condicao,fonte
+Tubo metálico,Ferro fundido sem revestimento,125,130,147,novo (0 anos),Azevedo Netto et al. (1998); Williams & Hazen (1933)
+Tubo metálico,Ferro fundido sem revestimento,107,110,131,usado 10 anos,Azevedo Netto et al. (1998); CHI Monograph 13
+Tubo metálico,Ferro fundido sem revestimento,89,100,124,usado 20 anos,Azevedo Netto et al. (1998); CHI Monograph 13
+Tubo metálico,Ferro fundido sem revestimento,75,90,120,usado 30 anos,Azevedo Netto et al. (1998); CHI Monograph 13
+Tubo metálico,Ferro fundido sem revestimento,54,80,117,usado 40+ anos,CHI Monograph 13
+Tubo metálico,Ferro fundido revestido com argamassa de cimento,130,135,144,novo,Azevedo Netto et al. (1998); DIPRA (2006); Lamont (1981)
+Tubo metálico,Ferro fundido revestido com argamassa de cimento,120,125,140,usado 10 anos,Azevedo Netto et al. (1998); DIPRA (2006)
+Tubo metálico,Ferro fundido revestido com argamassa de cimento,105,115,140,usado 20 anos,Azevedo Netto et al. (1998); DIPRA (2006)
+Tubo metálico,Ferro fundido revestido com epóxi,130,140,140,novo,Azevedo Netto et al. (1998); Porto (2006)
+Tubo metálico,Ferro fundido revestido com epóxi,120,130,130,usado 10 anos,Azevedo Netto et al. (1998); Porto (2006)
+Tubo metálico,Ferro fundido revestido com epóxi,110,120,120,usado 20 anos,Azevedo Netto et al. (1998); Porto (2006)
+Tubo metálico,Ferro fundido revestido asfáltico,100,110,130,novo a 20 anos,Lamont (1981); Williams & Hazen (1933)
+Tubo metálico,Ferro dúctil com argamassa de cimento - AWWA/DIPRA,130,140,157,novo,DIPRA (2006); AWWA C150/A21.50
+Tubo metálico,Ferro dúctil com argamassa de cimento - AWWA longo prazo,130,140,150,design longo prazo,DIPRA (2006); AWWA Manual M41
+Tubo metálico,Ferro dúctil com argamassa de cimento - tradição BR,130,130,140,novo,Azevedo Netto et al. (1998); Saint-Gobain Canalização
+Tubo metálico,Aço galvanizado,120,125,125,novo,Azevedo Netto et al. (1998)
+Tubo metálico,Aço galvanizado,100,100,120,usado 10+ anos,Azevedo Netto et al. (1998)
+Tubo metálico,Aço carbono sem revestimento,110,125,140,novo,Azevedo Netto et al. (1998); PPI Field Handbook (2021)
+Tubo metálico,Aço carbono sem revestimento,100,110,130,usado 10 anos,Azevedo Netto et al. (1998); PPI Field Handbook
+Tubo metálico,Aço carbono sem revestimento,80,90,100,usado 20+ anos,Azevedo Netto et al. (1998)
+Tubo metálico,Aço com revestimento epóxico interno,130,140,140,novo,Azevedo Netto et al. (1998); Porto (2006)
+Tubo metálico,Aço com revestimento epóxico interno,115,130,130,usado 10-20 anos,Azevedo Netto et al. (1998); Porto (2006)
+Tubo metálico,Aço com revestimento de argamassa de cimento,130,140,160,novo - AWWA M11,AWWA Manual M11 5a ed. (2017); Lamont (1981)
+Tubo metálico,Aço com revestimento de argamassa de cimento,125,140,151,em serviço 12-39 anos,Lamont (1981); Sanks Pumping Station Design
+Tubo metálico,Aço rebitado,80,90,110,variável segundo idade,Azevedo Netto et al. (1998); Porto (2006)
+Tubo metálico,Aço corrugado,60,60,60,todas idades,Azevedo Netto et al. (1998); PPI Field Handbook
+Tubo metálico,Aço inoxidável,130,140,140,novo,Eng.Toolbox
+Tubo metálico,Cobre,130,140,140,novo,Azevedo Netto et al. (1998); PPI Field Handbook
+Tubo metálico,Cobre,130,135,140,em uso 10-20 anos,Azevedo Netto et al. (1998)
+Tubo metálico,Latão,130,130,140,todas idades,Azevedo Netto et al. (1998); Porto (2006)
+Tubo metálico,Chumbo,120,130,140,novo,Azevedo Netto et al. (1998); Williams & Hazen original
+Tubo metálico,Alumínio,130,135,150,novo,Zocoler/UNESP-FEIS; Eng.Toolbox
+Tubo plástico,PVC,140,150,165,novo,AWWA Manual M23 (2002); Uni-Bell Handbook 4a ed.
+Tubo plástico,PVC,135,145,150,em uso 10 anos,Azevedo Netto et al. (1998); IPEX Tech. Bulletin
+Tubo plástico,PVC,130,140,150,em uso 20+ anos,Azevedo Netto et al. (1998); Porto (2006)
+Tubo plástico,PEAD - polietileno alta densidade,140,150,155,novo,AWWA Manual M55 (2006); PPI Handbook of PE Pipe 2a ed. (2008)
+Tubo plástico,PEAD - polietileno alta densidade,150,150,160,valor de projeto invariante - PPI,Plastics Pipe Institute; Performance Pipe PP901 (2021)
+Tubo plástico,PEAD - polietileno alta densidade,130,140,150,em uso 10-20 anos - tradicao BR,Azevedo Netto et al. (1998); Zocoler/UNESP-FEIS
+Tubo plástico,Polietileno (geral),129,140,150,novo - pequeno diametro,PPI Handbook (2008)
+Tubo plástico,ABS,120,130,140,novo,Eng.Toolbox; PPI handbook
+Tubo de concreto,Concreto - bom acabamento,130,140,141,novo,Azevedo Netto et al. (1998); Lamont (1981)
+Tubo de concreto,Concreto - acabamento comum,110,120,130,novo,Azevedo Netto et al. (1998); Porto (2006)
+Tubo de concreto,Concreto - acabamento comum,100,115,120,em uso 10-20 anos,Azevedo Netto et al. (1998); Porto (2006)
+Tubo de concreto,Concreto - acabamento rugoso,69,100,120,novo,Zocoler/UNESP-FEIS; Lamont (1981)
+Tubo de concreto,Concreto centrifugado,120,120,150,novo,Lamont (1981)
+Tubo de concreto,Concreto protendido,140,150,153,novo,Lamont (1981)
+Tubo de concreto,Cimento-amianto / fibrocimento,120,140,150,novo,Azevedo Netto et al. (1998)
+Tubo de concreto,Cimento-amianto / fibrocimento,120,130,140,em uso 10-20 anos,Azevedo Netto et al. (1998)
+Tubo cerâmico,Vidro,130,140,150,todas idades,Azevedo Netto et al. (1998)
+Tubo cerâmico,Manilha cerâmica / gres vidrado,100,110,110,todas idades,Azevedo Netto et al. (1998); Porto (2006)
+Tubo de material composto,Fiberglass / PRFV / GRP,140,150,150,novo,AWWA C950; NCRPB India Manual
+Tubo de madeira,Madeira em aduelas,110,120,145,todas idades,Azevedo Netto et al. (1998); PPI Field Handbook
+Alvenaria,Tijolos - condutos bem executados,90,100,100,variavel segundo idade,Azevedo Netto et al. (1998); Porto (2006)
